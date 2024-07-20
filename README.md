@@ -215,15 +215,14 @@
 </details>
   
 <details>
-    <summary>Решение</summary>
+  <summary>Решение</summary>
 
-    * Разработка и так велась на яндекс ВМ \
-      ![image](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image1.png)
-    * Каталог только другой, думаю роли не сыграет \
-      ![image](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image2.png)
-    * ![alt text](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image3.png)
-    * ![alt text](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image4.png)
-
+  * Разработка и так велась на яндекс ВМ \
+    ![image](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image1.png)
+  * Каталог только другой, думаю роли не сыграет \
+    ![image](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image2.png)
+  * ![alt text](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image3.png)
+  * ![alt text](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image4.png)
 
 </details>
 
