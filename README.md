@@ -223,6 +223,8 @@
     ![image](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image2.png)
   * ![alt text](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image3.png)
   * ![alt text](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image4.png)
+  * ![image](https://github.com/user-attachments/assets/6ff7bf9f-58a6-4d4d-b298-af345a9eac14)
+  * ссылка на репозиторий: 
 
 </details>
 
