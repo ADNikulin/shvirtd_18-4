@@ -75,7 +75,28 @@
 </details>
 
 <details>
-    <summary>Решение</summary>
+  <summary>Решение</summary>
+
+  * Подготовил текущую репу.
+  * Подготовил файлы
+    ** ![image](https://github.com/user-attachments/assets/ba6e0490-10ca-4077-b55e-e2daa21224ae)
+    ** Докер файл 
+      ```dockerfile
+      FROM python:3.9-slim
+  
+      ENV DB_HOST=127.0.0.1
+      ENV DB_TABLE=requests
+      ENV DB_USER=root
+      ENV DB_NAME=db1
+      ENV DB_PASSWORD=12345
+      
+      WORKDIR /app
+      COPY requirements.txt ./
+      RUN pip install -r requirements.txt
+      COPY main.py ./
+      CMD ["python", "main.py"]
+      ```
+    * 
     
 </details>
 ---
