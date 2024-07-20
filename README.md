@@ -96,7 +96,9 @@
       COPY main.py ./
       CMD ["python", "main.py"]
       ```
-    * 
+  * Собрал образ
+  * ![image](https://github.com/user-attachments/assets/1e6ee776-5064-4a6f-9fb1-b5fcb688bf20)
+  
     
 </details>
 ---
