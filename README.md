@@ -98,10 +98,8 @@
       ```
   * Собрал образ
   * ![image](https://github.com/user-attachments/assets/1e6ee776-5064-4a6f-9fb1-b5fcb688bf20)
-  
     
 </details>
----
 
 ## Задача 2 (*)
 <details>
@@ -118,7 +116,16 @@
 
 <details>
   <summary>Решение</summary>
-    
+
+  * Настроил хранилище контейнеров
+  * загрузил туда образ собранного прилоежния
+  * ![image](https://github.com/user-attachments/assets/7d6c5ea7-8783-4bbe-813b-0b8c67f7f17a)
+  * Запустил сканирование
+  * ![image](https://github.com/user-attachments/assets/5f258a26-f99f-4cad-b6d6-68089365b730)
+  * ![image](https://github.com/user-attachments/assets/f0a32ce7-bf1d-4318-859e-fd169fa4aa62)
+  * ну такое себе...
+  * Отчет по сканированию: 
+  
 </details>
 
 ## Задача 3
