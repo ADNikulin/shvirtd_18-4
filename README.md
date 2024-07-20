@@ -180,7 +180,7 @@
           depends_on:
             - db
           ports:
-            - 8090:5000
+            - 5000:5000
           networks:
             backend:
               ipv4_address: 172.20.0.5
