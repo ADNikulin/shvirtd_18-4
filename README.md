@@ -54,16 +54,15 @@
   В случае наличия установленного в системе ```docker-compose``` - удалите его.  
   2. Убедитесь что у вас УСТАНОВЛЕН ```docker compose```(без тире) версии не менее v2.24.X, для это выполните команду ```docker compose version```  
   
-  </details>
+</details>
   
-  <details>
-    <summary>Решение</summary>
-
-    1. ![image](https://github.com/user-attachments/assets/efdffb45-2e79-4f9f-bd73-817a24c4769d)
-    2. ![image](https://github.com/user-attachments/assets/d0164da7-79e2-4fd4-be49-b48f95e84b1b)
+<details>
+  <summary>Решение</summary>
     
-  </details>
----
+  ![image](https://github.com/user-attachments/assets/efdffb45-2e79-4f9f-bd73-817a24c4769d)
+  ![image](https://github.com/user-attachments/assets/d0164da7-79e2-4fd4-be49-b48f95e84b1b)
+    
+</details>
 
 ## Задача 1
 <details>
