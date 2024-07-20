@@ -83,13 +83,6 @@
     ** Докер файл 
       ```dockerfile
       FROM python:3.9-slim
-  
-      ENV DB_HOST=127.0.0.1
-      ENV DB_TABLE=requests
-      ENV DB_USER=root
-      ENV DB_NAME=db1
-      ENV DB_PASSWORD=12345
-      
       WORKDIR /app
       COPY requirements.txt ./
       RUN pip install -r requirements.txt
@@ -149,7 +142,60 @@
 
 <details>
     <summary>Решение</summary>
-    
+
+    * Подготовил compose (В работе использовал registry от яндекса)
+      ```
+      include:
+        - proxy.yaml
+
+      services:
+        db:
+          image: mysql:8
+          command: --mysql-native-password=ON
+          restart: on-failure
+          env_file:
+            - .env
+          environment:
+            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+            - MYSQL_DATABASE=test_db
+            - MYSQL_USER=test_db
+            - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+            - MYSQL_ROOT_HOST="%"
+          volumes:
+            - ./docker_volumes/mysql:/var/lib/mysql:delegated
+          ports:
+            - 3306:3306
+          networks:
+            backend:
+              ipv4_address: 172.20.0.10
+
+        web:
+          image: cr.yandex/crpfpe6a9e3kk9f8np39/ip_hunter:latest
+          restart: on-failure
+          environment:
+            - DB_HOST=db
+            - DB_USER=test_db
+            - DB_PASSWORD=${MYSQL_PASSWORD}
+            - DB_NAME=test_db
+          depends_on:
+            - db
+          ports:
+            - 8090:5000
+          networks:
+            backend:
+              ipv4_address: 172.20.0.5
+
+      networks:
+        backend:
+          driver: bridge
+          ipam:
+            config:
+            - subnet: 172.20.0.0/24
+      ```
+      * добился стабильности
+        ![alt text](img/image.png)
+      * 
+
 </details>
 
 ## Задача 4
