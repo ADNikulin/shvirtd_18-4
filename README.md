@@ -124,7 +124,7 @@
   * ![image](https://github.com/user-attachments/assets/5f258a26-f99f-4cad-b6d6-68089365b730)
   * ![image](https://github.com/user-attachments/assets/f0a32ce7-bf1d-4318-859e-fd169fa4aa62)
   * ну такое себе...
-  * Отчет по сканированию: 
+  * Отчет по сканированию: ![тут](https://github.com/ADNikulin/shvirtd_18-4/blob/main/vulnerabilities.csv)
   
 </details>
 
