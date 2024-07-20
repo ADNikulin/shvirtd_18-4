@@ -4,16 +4,20 @@ include:
 services:
   db:
     image: mysql:8
-    command: ["mysqld", "--mysql-native-password=ON"]
+    command: --mysql-native-password=ON
     restart: on-failure
+    env_file:
+      - .env
     environment:
-      MYSQL_ROOT_PASSWORD: 12345
-      MYSQL_USER: user
-      MYSQL_PASSWORD: 12345
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=test_db
+      - MYSQL_USER=test_db
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_ROOT_HOST="%"
+    volumes:
+      - ./docker_volumes/mysql:/var/lib/mysql:delegated
     ports:
       - 3306:3306
-    volumes:
-      - ./docker_volumes/mysql:/var/lib/mysql
     networks:
       backend:
         ipv4_address: 172.20.0.10
@@ -22,11 +26,10 @@ services:
     image: cr.yandex/crpfpe6a9e3kk9f8np39/ip_hunter:latest
     restart: on-failure
     environment:
-      - DB_HOST=172.20.0.10
-      - DB_TABLE=requests
-      - DB_USER=root
-      - DB_NAME=db1
-      - DB_PASSWORD=12345
+      - DB_HOST=db
+      - DB_USER=test_db
+      - DB_PASSWORD=${MYSQL_PASSWORD}
+      - DB_NAME=test_db
     depends_on:
       - db
     ports:
