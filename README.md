@@ -216,7 +216,15 @@
   
 <details>
     <summary>Решение</summary>
+
+    * Разработка и так велась на яндекс ВМ \
+      ![image](img/image1.png)
+    * Каталог только другой, думаю роли не сыграет \
+      ![image](img/image2.png)
+    * ![alt text](image.png)
+    * ![alt text](image-1.png)
     
+
 </details>
 
 ## Задача 5 (*)
