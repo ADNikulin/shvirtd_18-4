@@ -193,7 +193,7 @@
           - subnet: 172.20.0.0/24
     ```
     * добился стабильности
-      ![image](img/image.png)
+      ![image](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image.png)
     * ![image](https://github.com/user-attachments/assets/e41fea45-8abc-4005-a469-60c8a9ab5bea)
     * ![image](https://github.com/user-attachments/assets/ac08f8d0-d918-4216-9993-101d41c42977)
     * ![image](https://github.com/user-attachments/assets/1d77ffc6-a1fb-4779-b94f-39ed341dfd08)
@@ -218,12 +218,12 @@
     <summary>Решение</summary>
 
     * Разработка и так велась на яндекс ВМ \
-      ![image](img/image1.png)
+      ![image](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image1.png)
     * Каталог только другой, думаю роли не сыграет \
-      ![image](img/image2.png)
-    * ![alt text](image.png)
-    * ![alt text](image-1.png)
-    
+      ![image](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image2.png)
+    * ![alt text](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image3.png)
+    * ![alt text](https://github.com/ADNikulin/shvirtd_18-4/blob/main/img/image4.png)
+
 
 </details>
 
