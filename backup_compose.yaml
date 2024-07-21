@@ -1,0 +1,24 @@
+services:
+  cron:
+    image: schnitzler/mysqldump
+    restart: always
+    volumes:
+      - ./bin/crontab:/var/spool/cron/crontabs/root
+      - ./bin/backup:/usr/local/bin/backup
+    volumes_from:
+      - backup
+    env_file:
+      - .env
+    command: ["-l", "8", "-d", "8"]
+    environment:
+      MYSQL_HOST: db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: test_db
+    networks:
+      backend:
+        ipv4_address: 172.20.0.3
+  backup:
+    image: busybox
+    volumes:
+      - /opt/backup:/backup
